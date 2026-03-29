@@ -1,0 +1,5 @@
+{
+  "name": "Ancient Document Restorer",
+  "description": "An AI-powered multimodal pipeline for restoring and analyzing degraded historical manuscripts.",
+  "requestFramePermissions": []
+}
