@@ -1,0 +1,7 @@
+{
+  "name": "ancient-document-restorer",
+  "description": "An ancient library aesthetic application for restoring and deciphering historical manuscripts using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Newsreader", serif;
+  --font-label: "Noto Serif", serif;
+
+  --color-primary: #edc15a;
+  --color-primary-container: #c9a03d;
+  --color-on-primary: #3f2e00;
+  --color-background: #161311;
+  --color-surface: #161311;
+  --color-surface-container: #221f1d;
+  --color-surface-container-low: #1e1b19;
+  --color-surface-container-high: #2d2927;
+  --color-on-surface: #e9e1dd;
+  --color-on-surface-variant: #d1c5b1;
+  --color-outline-variant: #4e4636;
+  --color-secondary-container: #743445;
+  --color-secondary: #ffb1c2;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+}
+
+.wax-seal {
+  background: radial-gradient(circle at 30% 30%, #8b0000, #4a0000);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+}
+
+.wax-seal::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.parchment-texture {
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+.shaky-underline {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(237, 193, 90, 0.5);
+}
